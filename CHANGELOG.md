@@ -9,3 +9,11 @@
 ## 1.0.1
 
 * Update Android & iOS
+
+## 1.0.2
+
+* Update
+
+## 1.0.3
+
+* Update lagi

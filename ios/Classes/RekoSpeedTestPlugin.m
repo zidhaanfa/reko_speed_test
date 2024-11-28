@@ -10,6 +10,6 @@
 
 @implementation RekoSpeedTestPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  [RekoSpeedTestPlugin registerWithRegistrar:registrar];
+  [SwiftRekoSpeedTestPlugin registerWithRegistrar:registrar];
 }
 @end

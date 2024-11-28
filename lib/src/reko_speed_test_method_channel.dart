@@ -13,7 +13,7 @@ import 'reko_speed_test_platform_interface.dart';
 /// An implementation of [RekoSpeedTestPlatform] that uses method channels.
 class MethodChannelRekoSpeedTest extends RekoSpeedTestPlatform {
   /// The method channel used to interact with the native platform.
-  final _channel = const MethodChannel('com.shaz.plugin.fist/method');
+  final _channel = const MethodChannel('com.zidanfath.plugin/method');
   final _logger = Logger();
 
   Future<void> _methodCallHandler(MethodCall call) async {

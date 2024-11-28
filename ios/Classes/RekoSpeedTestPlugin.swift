@@ -1,7 +1,7 @@
 import Flutter
 import UIKit
 
-public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
+public class SwiftRekoSpeedTestPlugin: NSObject, FlutterPlugin {
     let DEFAULT_FILE_SIZE = 10485760
     let DEFAULT_TEST_TIMEOUT = 20000
     
@@ -13,9 +13,9 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
     private let logger = Logger()
     
     public static func register(with registrar: FlutterPluginRegistrar) {
-        channel = FlutterMethodChannel(name: "com.shaz.plugin.fist/method", binaryMessenger: registrar.messenger())
+        channel = FlutterMethodChannel(name: "com.zidanfath.plugin/method", binaryMessenger: registrar.messenger())
         
-        let instance = SwiftInternetSpeedTestPlugin()
+        let instance = SwiftRekoSpeedTestPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     
@@ -72,7 +72,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                         argsMap["percent"] = 50
                         argsMap["type"] = 2
                         DispatchQueue.main.async {
-                            SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                            SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                         }
                     }, final: { (resultSpeed) in
                         switch resultSpeed {
@@ -83,7 +83,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                             argsMap["percent"] = 100
                             argsMap["type"] = 0
                             DispatchQueue.main.async {
-                                SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                                SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                             }
                         case .error(let error):
                             self.logger.printLog(message: "Error is \(error.localizedDescription)")
@@ -92,7 +92,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                             argsMap["speedTestError"] = error.localizedDescription
                             argsMap["type"] = 1
                             DispatchQueue.main.async {
-                                SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                                SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                             }
                         }
                     })
@@ -104,7 +104,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                     //                            argsMap["speedTestError"] = error.localizedDescription
                     //                            argsMap["type"] = 1
                     //
-                    //                            SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                    //                            SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                     //                        }
                     //                    }
                     
@@ -117,7 +117,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                         argsMap["percent"] = 50
                         argsMap["type"] = 2
                         DispatchQueue.main.async {
-                            SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                            SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                         }
                     }, final: { (resultSpeed) in
                         switch resultSpeed {
@@ -131,7 +131,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                             argsMap["type"] = 0
                             
                             DispatchQueue.main.async {
-                                SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                                SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                             }
                         case .error(let error):
                             
@@ -142,7 +142,7 @@ public class RekoSpeedTestPlugin: NSObject, FlutterPlugin {
                             argsMap["speedTestError"] = error.localizedDescription
                             argsMap["type"] = 1
                             DispatchQueue.main.async {
-                                SwiftInternetSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
+                                SwiftRekoSpeedTestPlugin.channel.invokeMethod("callListener", arguments: argsMap)
                             }
                         }
                     })
