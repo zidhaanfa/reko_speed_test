@@ -1,6 +1,6 @@
 name: reko_speed_test
 description: "A new Flutter plugin for reko_speed_test to test the speed of the reko library."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/zidhaanfa/reko_speed_test.git
 
 environment:
