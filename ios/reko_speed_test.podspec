@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'reko_speed_test'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '1.0.0'
+  s.summary          = 'A new Flutter plugin for reko_speed_test to test the speed of the reko library.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+A new Flutter plugin for reko_speed_test to test the speed of the reko library.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/zidhaanfa/reko_speed_test.git'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Zidanfath' => 'zidanfath.code@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
