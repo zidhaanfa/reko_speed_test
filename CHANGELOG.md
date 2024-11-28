@@ -5,3 +5,7 @@
 ## 1.0.0
 
 * Release to pub.dev
+
+## 1.0.1
+
+* Update Android & iOS
