@@ -5,7 +5,7 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - reko_speed_test (1.0.3):
+  - reko_speed_test (1.0.4):
     - Flutter
 
 DEPENDENCIES:
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   connectivity_plus: 4c41c08fc6d7c91f63bc7aec70ffe3730b04f563
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
-  reko_speed_test: eb5ac6dcfa2327a079d5ef3da51a0ad6ba73e909
+  reko_speed_test: 297cd64b1e68f38b8d1650c6b0b24114febedcf3
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 

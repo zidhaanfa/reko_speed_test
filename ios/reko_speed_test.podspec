@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'reko_speed_test'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A new Flutter plugin for reko_speed_test to test the speed of the reko library.'
   s.description      = <<-DESC
 A new Flutter plugin for reko_speed_test to test the speed of the reko library.

@@ -1,9 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:reko_speed_test/src/reko_speed_test_utils.dart';
 import 'package:reko_speed_test/src/test_result.dart';
 
+import '../reko_speed_test_platform_interface.dart';
 import 'callbacks_enum.dart';
 import 'models/server_selection_response.dart';
-import 'reko_speed_test_platform_interface.dart';
 
 typedef DefaultCallback = void Function();
 typedef ResultCallback = void Function(TestResult download, TestResult upload);
@@ -45,11 +46,14 @@ class RekoSpeedTest {
     if (_isTestInProgress) {
       return;
     }
+    // Check if internet is available
     if (await isInternetAvailable() == false) {
       if (onError != null) {
         onError('No internet connection', 'No internet connection');
       }
       return;
+    } else {
+      debugPrint('Internet is available');
     }
 
     if (fileSizeInBytes < _defaultFileSize) {
