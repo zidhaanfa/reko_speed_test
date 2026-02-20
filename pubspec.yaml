@@ -1,25 +1,25 @@
 name: reko_speed_test
 description: "A new Flutter plugin for reko_speed_test to test the speed of the reko library."
-version: 1.0.3
+version: 1.0.6
 homepage: https://github.com/zidhaanfa/reko_speed_test.git
 
 environment:
-  sdk: ^3.5.4
-  flutter: '>=3.3.0'
+  sdk: ^3.11.0
+  flutter: '>=3.41.2'
 
 dependencies:
-  connectivity_plus: ^6.1.0
+  connectivity_plus: 7.0.0
   flutter:
     sdk: flutter
-  http: ^1.2.2
-  logger: ^2.5.0
-  plugin_platform_interface: ^2.0.2
-  tuple_dart: ^1.4.2
+  http: 1.6.0
+  logger: 2.6.2
+  plugin_platform_interface: 2.1.8
+  tuple_dart: 1.4.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: 6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
