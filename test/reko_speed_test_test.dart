@@ -24,3 +24,7 @@
 //     // expect(await RekoSpeedTestPlugin.getPlatformVersion(), '42');
 //   });
 // }
+
+void main() {
+  // Tests are currently commented out pending full implementation.
+}

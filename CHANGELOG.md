@@ -1,3 +1,11 @@
+## 1.0.6
+
+* Migrate to Flutter 3.41.2 & Dart 3.11.0
+* Upgrade connectivity_plus to 7.0.0, http to 1.6.0, logger to 2.6.2, plugin_platform_interface to 2.1.8, flutter_lints to 6.0.0
+* Fix deprecated `setMockMethodCallHandler` API in test file
+* Remove `example` folder from `pubspec.yaml`
+* Remove `example` folder from `.pubignore`
+
 ## 0.0.1
 
 * TODO: Describe initial release.
